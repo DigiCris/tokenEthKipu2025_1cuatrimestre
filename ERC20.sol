@@ -89,7 +89,7 @@ abstract contract ERC20 is IERC20 {
     {
         return _allowance[_owner][_spender];
     }
-
+    // El appove debe asegurarse de que se haya aprobado 0 antes del nuevo approve
     function approve(address _spender, uint256 _value)
         external
         returns (bool success)
