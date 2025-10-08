@@ -60,7 +60,7 @@ abstract contract ERC20 is IERC20 {
         address from,
         address _to,
         uint256 _value
-    ) internal returns (bool success) {
+    ) internal virtual returns (bool success) {
         _balanceOf[from] -= _value;
         _balanceOf[_to] += _value;
         return true;
